@@ -1,0 +1,24 @@
+[project]
+name = "rag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "chris", email = "chris@users.noreply.github.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "lancedb>=0.38.0",
+    "mcp[cli]>=2.2.0",
+    "openai>=3.13.0",
+    "python-dotenv>=1.2.3",
+    "python-frontmatter>=1.3.0",
+    "watchdog>=6.0.0",
+]
+
+[project.scripts]
+rag = "rag:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
